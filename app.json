@@ -1,0 +1,44 @@
+{
+  "pages":[
+    
+    "pages/movie/movie",
+    "pages/theatre/theatre",
+    "pages/mine/mine"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "red",
+    "navigationBarTitleText": "猫眼电影demo",
+    "navigationBarTextStyle":"white",
+    "backgroundColor":"#fff",
+    "enablePullDownRefresh":false
+  },
+  "tabBar":{
+    "position":"bottom",
+    "color":"#c7c7c7",
+    "selectedColor":"red",
+    "backgroundColor": "#f6f6f6",
+    "borderStyle": "white",
+    "list":[
+      {
+        "pagePath":"pages/movie/movie",
+        "text":"电影",
+        "iconPath":"images/movie_df.png",
+        "selectedIconPath":"images/movie.png"
+      },
+      {
+        "pagePath":"pages/theatre/theatre",
+        "text":"影院",
+        "iconPath":"images/theatre_df.png",
+        "selectedIconPath":"images/theatre.png"
+      },
+      {
+        "pagePath":"pages/mine/mine",
+        "text":"我的",
+        "iconPath":"images/mine_df.png",
+        "selectedIconPath":"images/mine.png"
+      }
+    ]
+  },
+  "debug":true
+}

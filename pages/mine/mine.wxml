@@ -1,0 +1,15 @@
+<view class="container">
+  <view class="cnt">
+    <view class="li {{index < list.length-1 ? 'bb' : ''}}" wx:for="{{list}}">
+      <text class="font-11 cnt-left">{{item.name}}</text>
+      <image class="arrow-right" src="../../images/arrow.png"></image>
+    </view>
+  </view>
+
+  <view class="cnt">
+    <view class="li {{index < movieList.length-1 ? 'bb' : ''}}" wx:for="{{movieList}}">
+      <text class="font-11 cnt-left">{{item.name}}</text>
+      <image class="arrow-right" src="../../images/arrow.png"></image>
+    </view>
+  </view>
+</view>

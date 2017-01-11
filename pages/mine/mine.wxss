@@ -1,0 +1,37 @@
+.arrow-right {
+  display:inline-flex;
+width:25rpx;
+height:25rpx;
+position:absolute;
+right:20rpx;
+line-height:100%;
+padding-top:10rpx;
+
+}
+
+.cnt-left {
+  display: inline-flex;
+}
+
+.li {
+  display: inline-block;
+  width: 100%;
+  padding: 20rpx 0;
+  margin-left: 30rpx;
+}
+.bb {
+    border-bottom: 1px solid #d7d7d7;
+}
+page {
+  height: 100%;
+  background: #eee;
+}
+
+.cnt {
+  background-color: #fff;
+  margin: 20rpx 0 0 0;
+  width: 100%;
+  border: 1px solid #d7d7d7;
+  border-left: 0;
+  border-right: 0;
+}

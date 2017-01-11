@@ -1,0 +1,21 @@
+<!--movie.wxml--> 
+<view class="container">
+    <view class="header">
+          <view class="font-11">北京</view>
+          <!--<view class="">
+            <image style="width: 200px; height: 200px; background-color: #eeeeee;" mode="{{item.mode}}" src="{{src}}"></image>
+          </view>-->
+    </view>
+
+    <scroll-view>
+        <view>
+            <view class="li-left">
+                
+            </view>
+
+            <view class="li-right">
+                
+            </view>
+        </view>
+    </scroll-view>
+</view>
