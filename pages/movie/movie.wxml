@@ -1,21 +1,45 @@
-<!--movie.wxml--> 
+
+<!--movie.wxml-->
 <view class="container">
-    <view class="header">
-          <view class="font-11">北京</view>
-          <!--<view class="">
-            <image style="width: 200px; height: 200px; background-color: #eeeeee;" mode="{{item.mode}}" src="{{src}}"></image>
-          </view>-->
+  <view class="header">
+    <view class="header-left">
+      <text class="font-10">{{cityName}}</text>
+      <image src="../../images/arrow_btm.png"></image>
     </view>
-
-    <scroll-view>
-        <view>
-            <view class="li-left">
-                
-            </view>
-
-            <view class="li-right">
-                
-            </view>
+    <view class="header-right">
+      <icon type="search" size="12"></icon>
+      <text class="font-10">{{searchContent}}</text>
+    </view>
+  </view>
+  <scroll-view>
+    <view class="cnt" wx:for="{{list}}">
+      <view class="cnt-left">
+        <image src="{{item.imageUrl}}"></image>
+      </view>
+      <view class="cnt-right">
+        <view class="line-1">
+          <view class="line-1-left">
+            <text class="font-11 font-bold">{{item.movieName}}</text>
+            <text class="blue font-9" wx:for="{{item.blueTags}}" wx:for-item="bTags">{{bTags}}</text>
+            <text class="orange font-9" wx:for="{{item.orangeTags}}" wx:for-item="oTags">{{oTags}}</text>
+          </view>
+          <view class="line-1-right orange">
+            <text class="font-11 font-bold">{{item.movieScore}}</text>
+            <text class="font-9">分</text>
+          </view>
         </view>
-    </scroll-view>
+        <view class="line-2">
+          <view class="line-2-left font-9 grey">
+            <text>{{item.movieType}}</text>
+            <text>{{item.movieActors}}</text>
+            <text class="gainsboro">{{item.movieInfo}}</text>
+          </view>
+          <view class="line-2-right">
+            <button class="white btn-sm red-btn" wx-if='{{item.movieStatus === "购票" ? true : false}}'>{{item.movieStatus}}</button>
+            <button class="white btn-sm blue-btn" wx-if='{{item.movieStatus === "预售" ? true : false}}'>{{item.movieStatus}}</button>
+          </view>
+        </view>
+      </view>
+    </view>
+  </scroll-view>
 </view>

@@ -1,43 +1,149 @@
+text {
+  margin: 0;
+  padding: 0;
+}
+
 /**app.wxss**/
+
 .container {
   height: 100%;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
   box-sizing: border-box;
-} 
+}
 
+/*--------顶部搜索框样式 start---------*/
 
+.header {
+  height: 60rpx;
+  width: 100%;
+  background-color: #eee;
+  display: flex;
+}
+
+.header-left {
+  height: 60rpx;
+  flex: 2;
+}
+
+.header-left image {
+  height: 50rpx;
+  width: 50rpx;
+  padding-top: 5rpx;
+}
+
+.header-left text {
+  height: 60rpx;
+  line-height: 60rpx;
+  display: inline-block;
+  position: relative;
+  bottom: 16rpx;
+  padding-left: 10rpx;
+  left: 10rpx;
+}
+
+.header-right {
+  border-radius: 3px;
+  background-color: #fff;
+  width: 100%;
+  flex: 10;
+  margin: 10rpx 20rpx 10rpx 0;
+  text-align: center;
+}
+
+.header-right text {
+  position: relative;
+  display: inline-block;
+  bottom: 4rpx;
+  left: 4rpx;
+}
+
+/*--------顶部搜索框样式 end---------*/
+
+/*字体大小*/
+
+.font-9 {
+  font-size: 9pt; /*最小字体，用于标签*/
+}
 
 .font-10 {
-  font-size:10pt
+  font-size: 10pt;
 }
 
 .font-11 {
-  font-size:11pt
+  font-size: 11pt;
 }
 
 .font-13 {
-  font-size:13pt
+  font-size: 13pt;
 }
 
 .font-14 {
-  font-size:14pt
+  font-size: 14pt;
 }
 
 .font-17 {
-  font-size:17pt
+  font-size: 17pt;
 }
 
 .font-18 {
-  font-size:18pt
+  font-size: 18pt;
 }
 
 .font-20 {
-  font-size:20pt
+  font-size: 20pt;
 }
 
 .font-40 {
-  font-size:40pt
+  font-size: 40pt;
 }
 
+.font-bold {
+  font-weight: bold;
+}
+
+/*颜色*/
+
+.blue {
+  color: deepskyblue;
+}
+
+.orange {
+  color: orange;
+}
+
+.white {
+  color: #fff;
+}
+
+.red {
+  color: red;
+}
+
+.gainsboro {
+  color: gainsboro;
+}
+
+.grey {
+  color: gray;
+}
+
+/*button */
+
+.btn-sm {
+  width: 90rpx;
+  height: 60rpx;
+  font-size: 12px;
+  padding: 0 10rpx;
+  border: 0;
+  line-height: 60rpx;
+}
+
+.red-btn {
+  background-color: red;
+}
+
+.blue-btn {
+  background-color: deepskyblue;
+}
