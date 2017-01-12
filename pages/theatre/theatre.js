@@ -1,7 +1,9 @@
 Page({
-    data : {
-        cityName:"北京",
-        searchContent:"找影院",
+    data: {
+        searchbar: {
+            cityName: "北京",
+            searchContent: "找影院"
+        },
         list: [
             {
                 theatreName: "橙天嘉禾影城(上地店)",

@@ -1,7 +1,7 @@
-
+<import src="../../template/searchbar.wxml"/>
 <!--movie.wxml-->
 <view class="container">
-  <view class="header">
+  <!--<view class="header">
     <view class="header-left">
       <text class="font-10">{{cityName}}</text>
       <image src="../../images/arrow_btm.png"></image>
@@ -10,7 +10,8 @@
       <icon type="search" size="12"></icon>
       <text class="font-10">{{searchContent}}</text>
     </view>
-  </view>
+  </view>-->
+  <template is="searchbar" data="{{...searchbar}}"/>
   <scroll-view>
     <view class="cnt" wx:for="{{list}}">
       <view class="cnt-left">

@@ -1,7 +1,10 @@
 Page({
   data: {
-    cityName: "北京",
-    searchContent: "找影视剧、影院",
+    searchbar: {
+      cityName: "北京",
+      searchContent: "找影视剧、影院"
+    },
+
     list: [
       {
         imageUrl: "../../localdata/imgs/stars.jpg",

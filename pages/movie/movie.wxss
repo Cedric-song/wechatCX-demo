@@ -7,12 +7,12 @@
 
 .cnt-left {
   flex: 3;
-  padding: 30rpx 0;
+  padding: 20rpx 0;
 }
 
 .cnt-right {
   flex: 11;
-  padding: 30rpx 0;
+  padding: 20rpx 0;
 }
 
 .cnt-left image {
@@ -27,6 +27,8 @@
 .line-1-right, .line-1-left {
   display: inline-block;
   overflow: hidden;
+  padding-bottom:5rpx;
+
 }
 
 .line-1-left .blue {

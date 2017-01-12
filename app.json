@@ -1,13 +1,12 @@
 {
   "pages":[
-    
     "pages/movie/movie",
     "pages/theatre/theatre",
     "pages/mine/mine"
   ],
   "window":{
     "backgroundTextStyle":"light",
-    "navigationBarBackgroundColor": "red",
+    "navigationBarBackgroundColor": "#FF0000",
     "navigationBarTitleText": "猫眼电影demo",
     "navigationBarTextStyle":"white",
     "backgroundColor":"#fff",
@@ -16,7 +15,7 @@
   "tabBar":{
     "position":"bottom",
     "color":"#c7c7c7",
-    "selectedColor":"red",
+    "selectedColor":"#FF0000",
     "backgroundColor": "#f6f6f6",
     "borderStyle": "white",
     "list":[

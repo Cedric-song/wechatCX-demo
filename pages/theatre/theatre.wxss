@@ -7,11 +7,12 @@
 
 .cnt-left {
   flex: 4;
-  padding: 30rpx 0;
+  padding: 20rpx 0;
 }
 
 .cnt-right {
   flex: 1;
+  padding: 20rpx 0;
 }
 
 .cnt-right text {
