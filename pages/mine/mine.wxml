@@ -1,15 +1,20 @@
 <view class="container">
   <view class="cnt">
-    <view class="li {{index < list.length-1 ? 'bb' : ''}}" wx:for="{{list}}">
-      <text class="font-11 cnt-left">{{item.name}}</text>
-      <image class="arrow-right" src="../../images/arrow.png"></image>
-    </view>
-  </view>
 
+    <!--静态list，只render一次，故无须wx:key-->
+    <block wx:for="{{list}}">
+      <navigator url="{{item.url}}" hover-class="navigator-hover" open-type="navigate" class="li {{index < list.length-1 ? 'bb' : ''}}">
+        <text class="font-l cnt-left">{{item.name}}</text>
+        <image class="arrow-right" src="../../images/arrow.png"></image>
+      </navigator>
+    </block>
+  </view>
   <view class="cnt">
-    <view class="li {{index < movieList.length-1 ? 'bb' : ''}}" wx:for="{{movieList}}">
-      <text class="font-11 cnt-left">{{item.name}}</text>
-      <image class="arrow-right" src="../../images/arrow.png"></image>
-    </view>
+    <block wx:for="{{movieList}}">
+      <navigator url="{{item.url}}" hover-class="navigator-hover" open-type="navigate" class="li {{index < movieList.length-1 ? 'bb' : ''}}">
+        <text class="font-l cnt-left">{{item.name}}</text>
+        <image class="arrow-right" src="../../images/arrow.png"></image>
+      </navigator>
+    </block>
   </view>
 </view>

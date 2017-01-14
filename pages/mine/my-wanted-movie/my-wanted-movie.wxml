@@ -1,0 +1,5 @@
+<import src="../../../template/noResult.wxml"/>
+
+<view class="container">
+  <template is="noResult" data="{{...noResult}}"/>
+</view>

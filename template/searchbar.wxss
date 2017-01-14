@@ -1,0 +1,46 @@
+/*--------顶部搜索框样式 ---------*/
+
+.header {
+  height: 60rpx;
+  width: 100%;
+  background-color: #eee;
+  display: flex;
+}
+
+.header-left {
+  height: 60rpx;
+  flex: 2;
+}
+
+.header-left image {
+  height: 50rpx;
+  width: 50rpx;
+  padding-top: 5rpx;
+}
+
+.header-left text {
+  height: 60rpx;
+  line-height: 60rpx;
+  display: inline-block;
+  position: relative;
+  bottom: 16rpx;
+  padding-left: 10rpx;
+  left: 10rpx;
+}
+
+.header-right {
+  border-radius: 3px;
+  background-color: #fff;
+  width: 100%;
+  flex: 10;
+  margin: 10rpx 20rpx 10rpx 0;
+  text-align: center;
+}
+
+.header-right text {
+  position: relative;
+  display: inline-block;
+  bottom: 4rpx;
+  left: 4rpx;
+}
+

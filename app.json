@@ -2,7 +2,12 @@
   "pages":[
     "pages/movie/movie",
     "pages/theatre/theatre",
-    "pages/mine/mine"
+    "pages/mine/mine",
+    "pages/mine/my-order/my-order",
+    "pages/mine/my-coupon/my-coupon",
+    "pages/mine/my-member-card/my-member-card",
+    "pages/mine/my-wanted-movie/my-wanted-movie",
+    "pages/mine/my-watched-movie/my-watched-movie"
   ],
   "window":{
     "backgroundTextStyle":"light",
@@ -14,10 +19,10 @@
   },
   "tabBar":{
     "position":"bottom",
-    "color":"#c7c7c7",
+    "color":"#666666",
     "selectedColor":"#FF0000",
-    "backgroundColor": "#f6f6f6",
-    "borderStyle": "white",
+    "backgroundColor": "#fff",
+    "borderStyle": "black",
     "list":[
       {
         "pagePath":"pages/movie/movie",
@@ -38,6 +43,12 @@
         "selectedIconPath":"images/mine.png"
       }
     ]
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "connectSocket": 10000,
+    "uploadFile": 10000,
+    "downloadFile": 10000
   },
   "debug":true
 }

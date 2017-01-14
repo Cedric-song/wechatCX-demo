@@ -7,12 +7,12 @@
 
 .cnt-left {
   flex: 3;
-  padding: 20rpx 0;
+  padding: 15rpx 0;
 }
 
 .cnt-right {
   flex: 11;
-  padding: 20rpx 0;
+  padding: 15rpx 0;
 }
 
 .cnt-left image {
@@ -31,6 +31,11 @@
 
 }
 
+.line-1-right {
+  position:absolute;
+right:20rpx;
+
+}
 .line-1-left .blue {
   border-radius: 3px;
   border: 1px solid deepskyblue;
@@ -63,7 +68,7 @@
   overflow: hidden;
   text-overflow: ellipsis;
   width: 400rpx;
-  margin-bottom: 25rpx;
+  margin-bottom: 20rpx;
 }
 
 .line-2-right button {

@@ -1,10 +1,12 @@
+@import "./template/noResult.wxss";
+@import "./template/searchbar.wxss";
+
 text {
   margin: 0;
   padding: 0;
 }
 
 /**app.wxss**/
-
 .container {
   height: 100%;
   flex-direction: column;
@@ -13,94 +15,17 @@ text {
   box-sizing: border-box;
 }
 
-/*--------顶部搜索框样式 start---------*/
-
-.header {
-  height: 60rpx;
-  width: 100%;
-  background-color: #eee;
-  display: flex;
-}
-
-.header-left {
-  height: 60rpx;
-  flex: 2;
-}
-
-.header-left image {
-  height: 50rpx;
-  width: 50rpx;
-  padding-top: 5rpx;
-}
-
-.header-left text {
-  height: 60rpx;
-  line-height: 60rpx;
-  display: inline-block;
-  position: relative;
-  bottom: 16rpx;
-  padding-left: 10rpx;
-  left: 10rpx;
-}
-
-.header-right {
-  border-radius: 3px;
-  background-color: #fff;
-  width: 100%;
-  flex: 10;
-  margin: 10rpx 20rpx 10rpx 0;
-  text-align: center;
-}
-
-.header-right text {
-  position: relative;
-  display: inline-block;
-  bottom: 4rpx;
-  left: 4rpx;
-}
-
-/*--------顶部搜索框样式 end---------*/
-
 /*字体大小*/
 
-.font-9 {
-  font-size: 9pt; /*最小字体，用于标签*/
+.font-s {
+  font-size: 9pt;
 }
-
-.font-10 {
+.font-m{
   font-size: 10pt;
 }
 
-.font-11 {
-  font-size: 11pt;
-}
-
-.font-13 {
-  font-size: 13pt;
-}
-
-.font-14 {
-  font-size: 14pt;
-}
-
-.font-17 {
-  font-size: 17pt;
-}
-
-.font-18 {
-  font-size: 18pt;
-}
-
-.font-20 {
-  font-size: 20pt;
-}
-
-.font-40 {
-  font-size: 40pt;
-}
-
-.font-bold {
-  font-weight: bold;
+.font-l{
+  font-size: 12pt;
 }
 
 /*颜色*/
@@ -122,11 +47,11 @@ text {
 }
 
 .gainsboro {
-  color: gainsboro;
+  color: #d7d7d7;
 }
 
 .grey {
-  color: gray;
+  color: #999999;
 }
 
 /*button */
@@ -146,4 +71,15 @@ text {
 
 .blue-btn {
   background-color: deepskyblue;
+}
+
+
+/** wxss **/
+/** 修改默认的navigator点击态 **/
+.navigator-hover {
+    color:blue;
+}
+/** 自定义其他点击态样式类 **/
+.other-navigator-hover {
+    color:red;
 }

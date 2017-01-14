@@ -1,0 +1,5 @@
+<template name="noResult">
+    <view class="noResult-view">
+        <text>{{message}}</text>
+    </view>
+</template>

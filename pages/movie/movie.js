@@ -8,7 +8,7 @@ Page({
     list: [
       {
         imageUrl: "../../localdata/imgs/stars.jpg",
-        movieName: "星球大战外传：侠盗一号",
+        movieName: "星球大战外传",
         blueTags: ["3D", "MAX"],
         orangeTags: ["点映"],
         movieScore: "7.8",

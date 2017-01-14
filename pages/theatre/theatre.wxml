@@ -2,19 +2,19 @@
 <view class="container">
   <template is="searchbar" data="{{...searchbar}}"/>
   <scroll-view>
-    <view class="cnt" wx:for="{{list}}">
+    <view class="cnt" wx:for="{{list}}" wx:key="pageNumber">
       <view class="cnt-left">
         <view class="line-1">
-          <text class="font-bold font-13">{{item.theatreName}}</text>
-          <view class="red font-13">
+          <text class="font-bold font-l">{{item.theatreName}}</text>
+          <view class="red font-l">
             <text class="price">{{item.leastPrice}}</text>
-            <text class="font-9">元起</text>
+            <text class="font-s">元起</text>
           </view>
         </view>
         <view class="line-2">
-          <text class="font-11">{{item.theatreAddress}}</text>
+          <text class="font-m">{{item.theatreAddress}}</text>
         </view>
-        <view class="line-3 font-9">
+        <view class="line-3 font-s">
           <view class="blue" wx:for="{{item.blueTags}}" wx:for-item="bTags">
             <text>{{bTags}}</text>
           </view>
@@ -22,13 +22,13 @@
             <text>{{oTags}}</text>
           </view>
         </view>
-        <view class="line-4 font-9">
+        <view class="line-4 font-s">
           <text class="icon white">{{item.promotion[0]}}</text>
           <text>{{item.promotion[1]}}</text>
         </view>
       </view>
       <view class="cnt-right">
-        <text class="font-10">2.8km</text>
+        <text class="font-9">{{item.distance}}</text>
       </view>
     </view>
   </scroll-view>
